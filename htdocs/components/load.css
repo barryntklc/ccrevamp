@@ -1,6 +1,7 @@
 #splash-main {
     height: 200px;
     border: 1px solid black;
+    margin-bottom: 10px;
 }
 
 p {
