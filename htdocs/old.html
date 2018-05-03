@@ -1,0 +1,57 @@
+<head>
+    <title>test-handlebars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+</head>
+<body>
+<div id="content-placeholder"></div>
+
+<script id="nav-template" type="text/x-handlebars-template">
+    <nav>
+
+    </nav>
+</script>
+
+<script src="components/nav.html" id="entry-template" type="text/x-handlebars-template"></script>
+
+<!--<script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+        <h1>{{title}}</h1>
+        <h2>By {{author.name}}</h2>
+
+        <div class="body">
+            {{body}}
+        </div>
+    </div>
+</script>-->
+
+<script>
+    var source = $("#entry-template").html();
+
+    alert(source);
+
+    //var source   = document.getElementById("entry-template").innerHTML;
+    var template = Handlebars.compile(source);
+
+    var data = {
+        title: "My First Blog Post!",
+        author: {
+            id: 47,
+            name: "Yehuda Katz"
+        },
+        body: "My first post. Wheeeee!"
+    };
+
+    $("#content-placeholder").html(template(data));
+    //        var html = Handlebars.toHTML();
+    //        $('#sampleArea').html(html);
+    /*var person = {
+     firstName: "Barryn",
+     lastName: "Chun",
+     blogURL: "barryn.chun@gmail.com"
+     };
+     var template = "<h1>{{firstName}} {{lastName}}</h1>Blog: {{blogURL}}";
+     var html = Mustache.to_html(template, person);
+     $('#sampleArea').html(html);*/
+</script>
+</body>
