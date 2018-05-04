@@ -2,109 +2,71 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="components/load.js"></script>
     <title>The Center</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 300px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-</style>
 </head>
-<body style="text-align:center">
-    <div id="libraries"></div>
-    <div class="container">
-        <div id="header"></div>
-        <div id="nav"></div>
-        <div id="splash"></div>
-        <div id="content container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <span style="display:block; height:25 ;"></span>
-                    <h1 style="color:#228B22">Welcome to the Campus Center</h1>
-                    <h5>Campus Center Complex is the student union of the University of Hawai`i at Manoa.</h5>
+<body>
+<div id="libraries"></div>
+<div class="container">
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="splash"></div>
+    <div id="content container">
+        <div class="row">
+            <div class="col-lg-12">
+                <span style="display:block; height:25 ;"></span>
 
-                    <p>The student union offers the university community and the public a wide variety of meeting, dining and
-                        entertainment options to enrich campus life and the educational experience. Campus Center,
-                        located in the heart of the University, strives to meet the co-curricular needs and interests of
-                        the University community by utilizing the Campus Center Complex (Campus Center, Hemenway Hall
-                        and the Warrior Recreation Center) as the primary venue for programs and events to create an
-                        environment where individuals can come and relax, study and be entertained or challenged. Campus
-                        Center Complex affects the quality of life on campus by the variety of co-curricular programs it
-                        provides. Please come and visit us!!!</p>
+                <h1>Welcome to the Campus Center!</h1>
+                <h5>The Campus Center Complex is the student union of the University of Hawai`i at Manoa.</h5>
+                <!--<p>The student union offers the university community and the public a wide variety of meeting, dining and
+                    entertainment options to enrich campus life and the educational experience. Campus Center,
+                    located in the heart of the University, strives to meet the co-curricular needs and interests of
+                    the University community by utilizing the Campus Center Complex (Campus Center, Hemenway Hall
+                    and the Warrior Recreation Center) as the primary venue for programs and events to create an
+                    environment where individuals can come and relax, study and be entertained or challenged. Campus
+                    Center Complex affects the quality of life on campus by the variety of co-curricular programs it
+                    provides. Please come and visit us!!!</p>-->
+                <p>
+                    We offer the university community and the public many options for meeting, dining, and
+                    entertainment,
+                    as a primary venue for programs and events in the heart of the Manoa Campus. With facilities
+                    throughout the complex
+                    (Campus Center, Hemenway Hall, and Warrior Recreation Center), our goal is to enrich campus life and
+                    education by
+                    creating an environment where individuals can relax, study, be entertained, and challenge
+                    themselves. <br><br>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>What's Happening</h3>
+
+                <div class="item">
+                    <h5>Spring 2018 Event Schedule</h5>
+                    <a href="https://uhmccbac.weebly.com/events.html">Check out Campus Center Board Activities
+                        Council!</a>
+                </div>
+                <div class="item">
+                    <h5>Spring Break 2018 Hours of Operation</h5>
+                    <a href="http://hawaii.edu/campuscenter/documents/SPRINGBREAK2018HoursofOperation.pdf">Spring Break
+                        2018 Hours of Operation</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 style="color:#228B22">What's Happening</h3>
-                    <h5 style="color:#32CD32">Spring 2018 Event Schedule</h5>
-                    <a href="https://uhmccbac.weebly.com/events.html">Check out Campus Center Board Activities Council!</a>
-                    <h5 style="color:#32CD32">Spring Break 2018 Hours of Operation</h5>
-                    <a href="http://hawaii.edu/campuscenter/documents/SPRINGBREAK2018HoursofOperation.pdf">Spring Break 2018 Hours of Operation</a>
-                </div>
-                <div class="col-lg-6">
-                    <span style="display:block; height:25 ;"></span>
-                    <h3 style="color:#228B22">Services and Registration</h3>
-                    <a href="https://manoa.hawaii.edu/records/register/guide.html">Guide to Registration</a>
+            <div class="col-lg-6">
+                <!--<span style="display:block; height:25 ;"></span>-->
+                <h3 style="color:#228B22">Services and Registration</h3>
+                <a href="https://manoa.hawaii.edu/records/register/guide.html">Guide to Registration</a>
 
+                <div class="item">
                     <h5 style="color:#32CD32">Manoa One Card</h5>
                     <a href="http://www.manoa.hawaii.edu/onecard/">MANOA ONE CARD</a>
+                </div>
 
-                    <h5 style="color:#32CD32">Meeting and Event Services</h5>
-                    <div class="popup" onclick="myFunction()">Click for Booking Contact Information
-                      <span class="popuptext" id="myPopup">Location:
+                <div class="item">
+                    <h5>Meeting and Event Services</h5>
+
+                    <div class="popup" onclick="ShowMESInfo()">Click for Booking Contact Information
+                      <span class="popuptext" id="MESPopup">Location:
                                                            Campus Center 209
                                                            <span style="display:block; height:5 ;"></span>
                                                            Hours of Operation:
@@ -161,27 +123,33 @@
                                                           <span style="display:block; height:1 ;"></span>
                                                           ccmes@hawaii.edu
                                                         </span>
-                   </div>
+                    </div>
+
 
                     <p>Looking for first-rate facilities in a relaxing, yet cosmopolitan environment?
-                      The Campus Center Complex, comprised of the Campus Center and Hemenway Hall,
-                      offers these choices at surprisingly low rates to make any meeting, conference, or special event a success.</p>
-                      <a href="https://ems.ccenter.hawaii.edu/virtualems/">Book your Room</a>
+                        The Campus Center Complex, comprised of the Campus Center and Hemenway Hall,
+                        offers these choices at surprisingly low rates to make any meeting, conference, or special event
+                        a success.</p>
+                    <a href="https://ems.ccenter.hawaii.edu/virtualems/">Book your Room</a>
 
-                    <h5 style="color:#32CD32">Computer Lab and Lounge</h5>
-                    <div class="popup" onclick="myFunction()">Click for Computer Lab Information
-                      <span class="popuptext" id="myPopup">Location:
+                </div>
+
+                <div class="item">
+                    <h5>Computer Lab and Lounge</h5>
+
+                    <div class="popup" onclick="ShowLabInfo()">Click for Computer Lab Information
+                      <span class="popuptext" id="LabPopup">Location:
                                                             Campus Center 316
                                                             <span style="display:block; height:5 ;"></span>
                                                             Hours of Operation:
                                                             <span style="display:block; height:5 ;"></span>
                                                             Fall & Spring
                                                             <span style="display:block; height:1 ;"></span>
-                                                            Monday–Friday: 7:00am–7:00pm
+                                                            Monday-Friday: 7:00am-7:00pm
                                                             <span style="display:block; height:5 ;"></span>
                                                             Summer Hours
                                                             <span style="display:block; height:1 ;"></span>
-                                                            Monday–Friday:
+                                                            Monday-Friday:
                                                             9:00am-5:00pm
                                                             <span style="display:block; height:5 ;"></span>
                                                             Spring Break
@@ -207,27 +175,40 @@
                     </div>
 
                     <script>
-                    // When the user clicks on div, open the popup
-                    function myFunction() {
-                      var popup = document.getElementById("myPopup");
-                      popup.classList.toggle("show");
-                    }
+                        // When the user clicks on div, open the popup
+                        function ShowMESInfo() {
+                            var popup = document.getElementById("MESPopup");
+                            popup.classList.toggle("show");
+                        }
+                        function ShowLabInfo() {
+                            var popup = document.getElementById("LabPopup");
+                            popup.classList.toggle("show");
+                        }
                     </script>
                     <p>Come relax and take a load off in the comforts of the Campus Center Computer Lab and Lounge.
-                      You can read, study or relax in an inviting and comfortable environment. Newspapers, e-mail service,
-                      and computer access are also available. </p>
-                    <p>To use the CC Lab and Lounge, you will need to have:  a valid and unexpired UH Student/Faculty &
-                      Staff ID card, or a valid unexpired UH username and password.  The CC Lab and Lounge is open
-                      to students and faculty & staff from the UH system. </p>
-                    <h5 style="color:#32CD32">Job Opportunities</h5>
+                        You can read, study or relax in an inviting and comfortable environment. Newspapers, e-mail
+                        service,
+                        and computer access are also available. </p>
+
+                    <p>To use the CC Lab and Lounge, you will need to have: a valid and unexpired UH Student/Faculty &
+                        Staff ID card, or a valid unexpired UH username and password. The CC Lab and Lounge is open
+                        to students and faculty & staff from the UH system. </p>
+                </div>
+                <div class="item">
+                    <h5>Job Opportunities</h5>
                     <a href="http://manoa.hawaii.edu/careercenter/students/student-jobs-2/">MANOA CAREER CENTER</a>
+
                     <p>For more information visit the Student Employment Website:</p>
+
                     <p><a href="https://www.sece.its.hawaii.edu">sece.its.hawaii.edu.</a></p>
-                    <p>Sparked your interest? Input the job number at the Student Employment website to get more information.</p>
+
+                    <p>Sparked your interest? Input the job number at the Student Employment website to get more
+                        information.</p>
                 </div>
             </div>
-
         </div>
-        <div id="footer"></div>
+
     </div>
+    <div id="footer"></div>
+</div>
 </body>

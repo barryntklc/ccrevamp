@@ -1,9 +1,43 @@
+body {
+    text-align: center;
+}
+
 #splash-main {
-    height: 125px;
-    border: 1px solid black;
+    /*height: 125px;*/
+    height: auto;
     margin-bottom: 10px;
+    /*background-image: url("components/campuscenter_small.png");*/
 }
 
 p {
-    font-size: 0.9em;
+    font-size: 0.8em;
+}
+
+.item {
+    /*border: 1px solid black;*/
+    background-color: #d8eed6;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px 10px;
+}
+
+.item:hover {
+    background-color: #e4fce2;
+}
+
+h1, h3 {
+    color: #228B22;
+}
+
+h5 {
+    color: #2db72d;
+}
+
+.bg-dark {
+    background-color: #0c5f00!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1)!important;
 }
