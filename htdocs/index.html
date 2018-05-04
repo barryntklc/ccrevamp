@@ -103,8 +103,8 @@
                     <a href="http://www.manoa.hawaii.edu/onecard/">MANOA ONE CARD</a>
 
                     <h5 style="color:#32CD32">Meeting and Event Services</h5>
-                    <div class="popup" onclick="myFunction()">Click for Booking Contact Information
-                      <span class="popuptext" id="myPopup">Location:
+                    <div class="popup" onclick="popup1()">Click for Booking Contact Information
+                      <span class="popuptext" id="Popup1">Location:
                                                            Campus Center 209
                                                            <span style="display:block; height:5 ;"></span>
                                                            Hours of Operation:
@@ -169,8 +169,8 @@
                       <a href="https://ems.ccenter.hawaii.edu/virtualems/">Book your Room</a>
 
                     <h5 style="color:#32CD32">Computer Lab and Lounge</h5>
-                    <div class="popup" onclick="myFunction()">Click for Computer Lab Information
-                      <span class="popuptext" id="myPopup">Location:
+                    <div class="popup" onclick="popup2()">Click for Computer Lab Information
+                      <span class="popuptext" id="Popup2">Location:
                                                             Campus Center 316
                                                             <span style="display:block; height:5 ;"></span>
                                                             Hours of Operation:
@@ -208,8 +208,13 @@
 
                     <script>
                     // When the user clicks on div, open the popup
-                    function myFunction() {
-                      var popup = document.getElementById("myPopup");
+                    function popup1() {
+                      var popup = document.getElementById("Popup1");
+                      popup.classList.toggle("show");
+                    }
+
+                    function popup2() {
+                      var popup = document.getElementById("Popup2");
                       popup.classList.toggle("show");
                     }
                     </script>
